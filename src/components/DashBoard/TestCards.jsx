@@ -7,10 +7,10 @@ const TestCards = ({ data }) => {
       <Image
         src={data.Img}
         alt={data.title}
-        className="object-cover w-full rounded-md shadow-md mx-auto"
+        className="object-cover w-full rounded-md h-60 shadow-md mx-auto"
       />
-      <div className="w-full bg-black rounded-b-lg absolute bottom-0 left-0 ring-0 p-3 text-white flex justify-between gap-1 box-border">
-        <div>
+      <div className="w-3/4 outline backdrop-blur bg-white-100 rounded-lg absolute bottom-2 left-2 ring-0 p-3 text-white flex justify-between gap-1 box-border mx-2 my-2">
+        <div className="mx-auto">
           {" "}
           <H6 text={data.title} />
           <span className="bg-gray-100 text-gray-900 text-xs font-medium px-1 py-0.5 rounded">

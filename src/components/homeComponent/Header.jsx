@@ -3,14 +3,18 @@ import SearchQuiz from "./SearchQuiz";
 
 const Header = () => {
   return (
-    <div className="flex items-center justify-end">
-      <div>
-        {" "}
-        <SearchQuiz />
-      </div>
-      <div>
-        <Profile />
-      </div>
+    // <div className="flex-row md:flex-col items-center justify-between">
+    //   <div>
+    //     {" "}
+    //     <SearchQuiz />
+    //   </div>
+    //   <div>
+    //     <Profile />
+    //   </div>
+    // </div>
+    <div className="flex flex-row justify-between">
+      <SearchQuiz />
+      <Profile />
     </div>
   );
 };
