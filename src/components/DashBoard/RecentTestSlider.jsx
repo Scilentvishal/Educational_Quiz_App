@@ -14,9 +14,9 @@ const RecentTestSlider = () => {
   return (
     <Swiper
       breakpoints={{
-        // 1040: {
-        //   slidesPerView: 3,
-        // },
+        1040: {
+          slidesPerView: 3,
+        },
         440: {
           slidesPerView: 2,
         },

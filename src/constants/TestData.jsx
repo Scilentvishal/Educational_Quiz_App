@@ -26,4 +26,10 @@ export const TestData = [
     score: 60,
     status: "Completed",
   },
+  {
+    Img: purple,
+    title: "C Programing",
+    score: 60,
+    status: "Completed",
+  },
 ];

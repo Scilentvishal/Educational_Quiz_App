@@ -6,11 +6,11 @@ import { IoIosTime } from "react-icons/io";
 
 const UserProfile = () => {
   return (
-    <div class="flex flex-col md:flex-row  px-2 py-2">
-      <div class="flex-none">
+    <div class="flex flex-col lg:flex-row  px-2 py-2">
+      <div>
         <Image src={dp} />
       </div>
-      <div class="flex-none">
+      <div>
         <p className="md:my-5">
           {" "}
           <span className="text-blue-700 font-bold text-2xl">

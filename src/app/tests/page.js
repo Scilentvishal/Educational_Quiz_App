@@ -3,11 +3,13 @@ import { TestCard } from "@/constants/TestCard";
 import React from "react";
 import { IoNewspaper } from "react-icons/io5";
 import { TiArrowSortedDown } from "react-icons/ti";
+import RecentTestSlider from "@/components/DashBoard/RecentTestSlider";
+import { FaPen } from "react-icons/fa";
 
 const page = () => {
   return (
     <div className="py-5">
-      <div className="flex justify-between">
+      {/* <div className="flex justify-between">
         <TitleWithIcon text="All Tests" Icon={IoNewspaper} />
         <TitleWithIcon text="Sort" Icon={TiArrowSortedDown} />
       </div>
@@ -30,7 +32,11 @@ const page = () => {
         <div className="col-span-1">
           <TestCard />
         </div>
-      </div>
+      </div> */}
+        <TitleWithIcon text="Tests" Icon={FaPen} />
+
+<RecentTestSlider/>
+      
     </div>
   );
 };

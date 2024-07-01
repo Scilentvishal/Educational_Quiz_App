@@ -53,39 +53,45 @@ const SideBar = () => {
               <MdClose size={30} />
             </button>
           </div>
-          <ul className="space-y-2 font-medium">
-            <li>
-              <a
-                href="#"
-                className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-white-700 dark:hover:bg-gray-700 group"
-              >
-                <Logo />
-              </a>
-            </li>
-            {Links.map((item, i) => (
+          <div className="flex flex-col justify-between h-full">
+            <ul className="space-y-2 font-medium">
               <li>
-                <Link
-                  href={item.href}
-                  key={i}
-                  className="flex items-center p-2 rounded-lg text-gray-500 hover:text-white hover:bg-blue-700"
+                <a
+                  href="#"
+                  className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-white-700 dark:hover:bg-gray-700 group"
                 >
-                  <SmallTitleWithIcon data={item} />
-                </Link>
+                  <Logo />
+                </a>
               </li>
-            ))}
-          </ul>
+              {Links.map((item, i) => (
+                <li>
+                  <Link
+                    href={item.href}
+                    key={i}
+                    className="flex items-center p-2 rounded-lg text-gray-500 hover:text-white hover:bg-blue-700"
+                  >
+                    <SmallTitleWithIcon data={item} />
+                  </Link>
+                </li>
+              ))}
+            </ul>
 
-          <div className="support w-[90%] bg-blue-700 h-[35%] mt-40 rounded-lg p-5 relative">
-            <h4 className="text-white">Support 24/7</h4>
-            <p className="text-gray-400">Contact us anytime</p>
-            <br />
-            <button
-              type="button"
-              class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-blue-700 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-black-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
-            >
-              Start
-            </button>
-            <Image className="right-1 bottom-1 absolute" src={support} />
+            <div className="support w-full bg-blue-700 rounded-lg p-5 relative">
+              <div>
+                <h4 className="text-white">Support 24/7</h4>
+                <p className="text-gray-400">Contact us anytime</p>
+                <br />
+                <button
+                  type="button"
+                  class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-blue-700 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-black-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+                >
+                  Start
+                </button>
+              </div>
+              <div className="relative">
+                <Image className="right-1 bottom-1 ml-auto" src={support} />
+              </div>
+            </div>
           </div>
         </div>
       </aside>
